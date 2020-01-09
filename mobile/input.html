@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=699, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap Online -->
+    <link rel="stylesheet" media="(max-width:767.98px)" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>.f-1{font-size: 1em;}.f-2{font-size: 2em;}</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="pos-f-t">
+        <nav class="navbar navbar-dark bg-primary d-flex justify-content-start">
+          <div style="width:0%;z-index:1;">
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+          </div>
+          <h5 class="text-white text-center m-0 w-100">Sistem Rekap Nilai</h5>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <div class="list-group">
+                <a href="beranda.html" class="list-group-item list-group-item-action">Beranda</a>
+                <a href="#" class="list-group-item list-group-item-action active">Input Nilai</a>
+                <a href="#" class="list-group-item list-group-item-action">Lihat Nilai</a>
+                <a href="#" class="list-group-item list-group-item-action">Logout</a>
+              </div>
+            </div>
+        </div>
+        <div class="my-3 container w-100">
+            <h1 class="display-4 text-center f-2 mb-3">Input Nilai</h1>
+            <div class="form-group">
+                <label class="font-weight-bold">Nama Lengkap</label>
+                <select class="form-control" id="">
+                  <option>--- Pilih Nama ---</option>
+                  <option>Budi Budi Budi</option>
+                  <option>Ana Ana Ana</option>
+                  <option>Rudi Rudi Rudi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold w-50">Kelas</label>
+                <label class="font-weight-bold">Patas</label>
+                <div class="d-flex flex-row">
+                    <input type="text" class="form-control" id="" value="VIII" disabled>
+                    <label class="mx-3 mt-2">/</label>
+                    <input type="text" class="form-control" id="" value="7" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+              <label class="font-weight-bold w-50">Tanggal</label>
+              <label class="font-weight-bold">Waktu Kehadiran</label>
+              <div class="d-flex flex-row">
+                <input type="date" class="form-control" id="" value="">
+                <label class="mx-3 mt-2">/</label>
+                <input type="time" class="form-control" id="" value="">
+              </div>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Nama Surah</label>
+                <select class="form-control" id="">
+                    <option>--- Pilih Surah ---</option>
+                    <option>An-Naas</option>
+                    <option>Al-Falaq</option>
+                    <option>Al-Ikhlas</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label class="font-weight-bold">Ayat</label>
+              <div class="d-flex flex-row">
+                <select class="form-control" id="">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label class="mx-3 mt-2">~</label>
+                <select class="form-control" id="">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="font-weight-bold">Skor Penilaian (Fasohah/Tajwid/Kelancaran)</label>
+              <div class="d-flex flex-row">
+                <select class="form-control" id="">
+                    <option>100</option>
+                    <option>90</option>
+                    <option>80</option>
+                </select>
+                <label class="mx-3 mt-2">/</label>
+                <select class="form-control" id="">
+                    <option>100</option>
+                    <option>90</option>
+                    <option>80</option>
+                </select>
+                <label class="mx-3 mt-2">/</label>
+                <select class="form-control" id="">
+                    <option>100</option>
+                    <option>90</option>
+                    <option>80</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Input Nilai</button>
+        </div>
+    </div>
+
+    <!-- JS Online -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JS Offline -->
+    <script src="bootstrap/js/jquery-3.3.1.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!-- Ionicons Online -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
