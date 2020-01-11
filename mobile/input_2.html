@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap Online -->
+    <link rel="stylesheet" media="(max-width:767.98px)" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>.f-1{font-size: 1em;}.f-2{font-size: 2em;}.w-60{width:60%;}.w-11{width:11%;}.w-8{width:8%;}</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="pos-f-t">
+        <nav class="navbar navbar-dark bg-primary d-flex justify-content-start">
+          <div style="width:0%;z-index:1;">
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu"></ion-icon>
+            </button>
+          </div>
+          <h5 class="text-white text-center m-0 w-100">Sistem Rekap Nilai</h5>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <div class="list-group">
+                <a href="beranda.html" class="list-group-item list-group-item-action">Beranda</a>
+                <a href="input.html" class="list-group-item list-group-item-action">Input Nilai Harian</a>
+                <a href="#" class="list-group-item list-group-item-action active">Input Nilai Semesteran</a>
+                <a href="lihat.html" class="list-group-item list-group-item-action">Lihat Nilai Harian</a>
+                <a href="lihat_2.html" class="list-group-item list-group-item-action">Lihat Nilai Semesteran</a>
+                <a href="#" class="list-group-item list-group-item-action">Logout</a>
+              </div>
+            </div>
+        </div>
+        <div class="my-3 container w-100">
+            <h1 class="display-4 text-center f-2 mb-3">Input Nilai Semester</h1>
+            <div class="form-group">
+                <label class="font-weight-bold w-60">Nama Lengkap</label>
+                <label class="font-weight-bold w-11">UTS</label>
+                <label class="font-weight-bold w-11">UAS</label>
+                <label class="font-weight-bold" style="width:7%;">Per</label>
+                <label class="font-weight-bold" style="width:7%;">Uca</label>
+                <div class="d-flex flex-row mt-1">
+                    <input type="text" class="form-control w-60" id="" value="Budi Budi Budi" disabled>
+                    <select class="form-control ml-1 p-1 w-11" id="">
+                        <option>100</option>
+                        <option>90</option>
+                        <option>80</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-11" id="">
+                        <option>100</option>
+                        <option>90</option>
+                        <option>80</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-8" id="">
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-8" id="">
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-row mt-1">
+                    <input type="text" class="form-control w-60" id="" value="Ani Ani Ani" disabled>
+                    <select class="form-control ml-1 p-1 w-11" id="">
+                        <option>100</option>
+                        <option>90</option>
+                        <option>80</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-11" id="">
+                        <option>100</option>
+                        <option>90</option>
+                        <option>80</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-8" id="">
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-8" id="">
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-row mt-1">
+                    <input type="text" class="form-control w-60" id="" value="Rudi Rudi Rudi" disabled>
+                    <select class="form-control ml-1 p-1 w-11" id="">
+                        <option>100</option>
+                        <option>90</option>
+                        <option>80</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-11" id="">
+                        <option>100</option>
+                        <option>90</option>
+                        <option>80</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-8" id="">
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                    <select class="form-control ml-1 p-1 w-8" id="">
+                        <option>A</option>
+                        <option>B</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Input Nilai</button>
+        </div>
+    </div>
+
+    <!-- JS Online -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JS Offline -->
+    <script src="bootstrap/js/jquery-3.3.1.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!-- Ionicons Online -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
