@@ -6,8 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap Online -->
     <link rel="stylesheet" media="(max-width:767.98px)" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>.f-2{font-size: 2em;}</style>
+    <style>.f-1{font-size: 1em;}.f-2{font-size: 2em;}</style>
     <title>Document</title>
+    <script>
+      function input() {
+        var nama = document.getElementById('nama_lengkap').value,
+        kelas = document.getElementById('kelas').value,
+        patas = document.getElementById('patas').value,
+        tanggal = document.getElementById('tanggal').value,
+        waktu = document.getElementById('waktu').value,
+        surah = document.getElementById('nama_surah').value,
+        ayat_1 = document.getElementById('ayat_1').value,
+        ayat_2 = document.getElementById('ayat_2').value,
+        fasohah = document.getElementById('nilai_fas').value,
+        tajwid = document.getElementById('nilai_taj').value,
+        kelancaran = document.getElementById('nilai_kel').value;
+        alert(nama+kelas+patas+tanggal+waktu+surah+ayat_1+ayat_2+fasohah+tajwid+kelancaran);
+      }
+    </script>
 </head>
 <body>
     <div class="pos-f-t">
@@ -35,7 +51,7 @@
             <h1 class="display-4 text-center f-2 mb-3">Input Nilai</h1>
             <div class="form-group">
                 <label class="font-weight-bold">Nama Lengkap</label>
-                <select class="form-control" id="">
+                <select class="form-control" id="nama_lengkap">
                   <option>--- Pilih Nama ---</option>
                   <option>Budi Budi Budi</option>
                   <option>Ana Ana Ana</option>
@@ -46,23 +62,23 @@
                 <label class="font-weight-bold w-50">Kelas</label>
                 <label class="font-weight-bold">Patas</label>
                 <div class="d-flex flex-row">
-                    <input type="text" class="form-control" id="" value="VIII" disabled>
+                    <input type="text" class="form-control" id="kelas" value="VIII" disabled>
                     <label class="mx-3 mt-2">/</label>
-                    <input type="text" class="form-control" id="" value="7" disabled>
+                    <input type="text" class="form-control" id="patas" value="7" disabled>
                 </div>
             </div>
             <div class="form-group">
               <label class="font-weight-bold w-50">Tanggal</label>
               <label class="font-weight-bold">Waktu Kehadiran</label>
               <div class="d-flex flex-row">
-                <input type="date" class="form-control" id="" value="">
+                <input type="date" class="form-control" id="tanggal" value="">
                 <label class="mx-3 mt-2">/</label>
-                <input type="time" class="form-control" id="" value="">
+                <input type="time" class="form-control" id="waktu" value="">
               </div>
             </div>
             <div class="form-group">
                 <label class="font-weight-bold">Nama Surah</label>
-                <select class="form-control" id="">
+                <select class="form-control" id="nama_surah">
                     <option>--- Pilih Surah ---</option>
                     <option>An-Naas</option>
                     <option>Al-Falaq</option>
@@ -72,13 +88,13 @@
             <div class="form-group">
               <label class="font-weight-bold">Ayat</label>
               <div class="d-flex flex-row">
-                <select class="form-control" id="">
+                <select class="form-control" id="ayat_1">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                 </select>
                 <label class="mx-3 mt-2">~</label>
-                <select class="form-control" id="">
+                <select class="form-control" id="ayat_2">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -88,26 +104,26 @@
             <div class="form-group">
               <label class="font-weight-bold">Skor Penilaian (Fasohah/Tajwid/Kelancaran)</label>
               <div class="d-flex flex-row">
-                <select class="form-control" id="">
+                <select class="form-control" id="nilai_fas">
                     <option>100</option>
                     <option>90</option>
                     <option>80</option>
                 </select>
                 <label class="mx-3 mt-2">/</label>
-                <select class="form-control" id="">
+                <select class="form-control" id="nilai_taj">
                     <option>100</option>
                     <option>90</option>
                     <option>80</option>
                 </select>
                 <label class="mx-3 mt-2">/</label>
-                <select class="form-control" id="">
+                <select class="form-control" id="nilai_kel">
                     <option>100</option>
                     <option>90</option>
                     <option>80</option>
                 </select>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Input Nilai</button>
+            <button type="submit" class="btn btn-primary w-100" onclick="input()">Input Nilai</button>
         </div>
     </div>
 
