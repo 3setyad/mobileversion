@@ -8,6 +8,13 @@
     <link rel="stylesheet" media="(max-width:767.98px)" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>.f-1{font-size: 1em;}.f-2{font-size: 2em;}</style>
     <title>Document</title>
+    <script>
+      function cari() {
+        var nama = document.getElementById('nama_lengkap').value;
+        document.getElementById('nama_bold').innerHTML = nama;
+        alert(nama);
+      }
+    </script>
 </head>
 <body>
     <div class="pos-f-t">
@@ -35,16 +42,16 @@
             <h1 class="display-4 text-center f-2 mb-3">Nilai Semesteran</h1>
             <div class="form-group">
                 <label class="font-weight-bold">Nama Lengkap</label>
-                <select class="form-control" id="">
+                <select class="form-control" id="nama_lengkap">
                   <option>--- Pilih Nama ---</option>
                   <option>Budi Budi Budi</option>
                   <option>Ana Ana Ana</option>
                   <option>Rudi Rudi Rudi</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary w-100">Cari</button>
+            <button type="submit" class="btn btn-primary w-100" onclick="cari()">Cari</button>
             <div class="mt-3">
-              <h5>Budi Budi Budi</h5>
+              <h5 id="nama_bold">Budi Budi Budi</h5>
               <div class="d-flex flex-row">
                 <label class="font-weight-bold">Total Kehadiran :</label>
                 <b class="ml-1 text-success">15</b>
