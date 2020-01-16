@@ -6,30 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap Online -->
     <link rel="stylesheet" media="(max-width:767.98px)" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>.f-2{font-size: 2em;}</style>
+    <style>.f-1{font-size: 1em;}.f-2{font-size: 2em;}</style>
     <title>Document</title>
+    <script>
+        function login() {
+            var username = document.getElementById('username').value,
+            password = document.getElementById('password').value;
+            alert('username='+username+'&password='+password);
+        }
+    </script>
 </head>
 <body>
     <!-- redirect to desktop Version -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         if (screen.width > 699) { document.location = "../"; }
-    </script>
+    </script> -->
 
-    <div class="container w-100 mt-5">
-        <h1 class="text-muted">Mobile Version</h1>
-        <h1 class="display-4 text-center f-2">Sistem Rekap Nilai</h1>
+    <div class="container w-75 mt-5">
+        <label class="text-muted">Mobile Version</label>
+        <h1 class="display-4 text-center">Sistem Rekap Nilai</h1>
         
         <!-- Login form -->
-        <form action="beranda.html">
+        <form>
             <div class="form-group">
             <label>Username</label>
-            <input type="email" class="form-control" id="" placeholder="Username">
+            <input type="email" class="form-control" id="username" placeholder="Username">
             </div>
             <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" id="" placeholder="Password">
+            <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary w-100">Login</button>
+            <button type="submit" class="btn btn-primary w-100" onclick="login()">Login</button>
         </form>
     </div>
 </bod>
